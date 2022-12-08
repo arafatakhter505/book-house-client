@@ -3,7 +3,7 @@ import { bookselv } from "../../../assets";
 
 const Hero = () => {
   return (
-    <section className="container mx-auto my-12 flex md:flex-row flex-col-reverse items-center px-6">
+    <section className="container mx-auto my-12 flex md:flex-row flex-col-reverse items-center px-6 lg:px-0">
       <div className="md:w-1/2">
         <h3 className="text-xl">Book House</h3>
         <h2 className="lg:text-5xl md:text-4xl text-2xl font-semibold">
