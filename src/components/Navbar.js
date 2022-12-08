@@ -21,7 +21,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="bg-base-100 z-50 sticky top-0">
+    <nav className="bg-base-100 z-50 sticky top-0 shadow pb-2">
       <div className="navbar container mx-auto py-4">
         <div className="navbar-start">
           <div className="dropdown">
@@ -48,7 +48,7 @@ const Navbar = () => {
               {menu}
             </ul>
           </div>
-          <Link to={"/"} className="lg:text-3xl text-xl font-bold">
+          <Link to={"/"} className="lg:text-3xl md:text-xl font-bold">
             Book <span className="text-primary">House</span>
           </Link>
         </div>
@@ -72,51 +72,19 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        {/* <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal p-0">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li tabIndex={0}>
-              <a>
-                Parent
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
-        </div> */}
         <div className="navbar-end">
-          <button className="btn btn-ghost text-4xl">
+          <button className="text-4xl">
             <AiOutlineShoppingCart />
           </button>
-          <button className="btn btn-primary btn-outline lg:btn btn-sm normal-case ml-3">
+          <button className="btn btn-primary btn-outline lg:btn btn-sm ml-4">
             Sign In
           </button>
         </div>
       </div>
-      <div className="hidden lg:block text-xl container mx-auto">
+      <div className="hidden lg:block text-xl text-center container mx-auto border">
         <ul className="menu menu-horizontal p-0">{menu}</ul>
       </div>
-      <div className="form-control container mx-auto md:hidden px-4">
+      <div className="form-control container mx-auto md:hidden px-4 pb-2">
         <div className="input-group">
           <select className="select select-bordered">
             <option>Book</option>
